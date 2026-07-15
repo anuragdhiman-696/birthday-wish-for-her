@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="music/Aarzu.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="animation-overlay" id="animationOverlay"></div>
+
+    <main class="app-container">
+        
+        <section class="screen active" id="screen-lock">
+            <div class="glass-card lock-card">
+                <div class="lock-icon-wrapper">
+                    <img src="images/lockscreen.png" alt="Locked" class="lock-display-img">
+                </div>
+                <h2 class="lock-title">This page is locked 🔒</h2>
+                <p class="lock-subtitle">Enter the secret birthday password to unlock</p>
+                
+                <div class="password-container">
+                    <input type="password" id="password-input" class="glass-input" placeholder="Enter password..." maxlength="8">
+                    <p id="password-error" class="error-text"></p>
+                </div>
+
+                <button class="btn btn-primary progress-trigger" id="btn-unlock">
+                    <span>Unlock Magic ✨</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="screen" id="screen-prompt">
+            <div class="glass-card interactive-card">
+                <div class="kitty-cake-container">
+                    <img src="images/images.jpg" alt="Hello Kitty Birthday Cake" class="floating-kitty-cake">
+                </div>
+                <h2 class="prompt-title">Are you ready to see your birthday wish?</h2>
+                <p class="prompt-subtitle">Think carefully! 💕</p>
+                <div class="button-group">
+                    <button class="btn btn-success" id="btn-yes">YES! 😍</button>
+                    <button class="btn btn-danger" id="btn-no">NO 😢</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="screen" id="screen-birthday">
+            <div class="glass-card celebration-card">
+                <h1 class="glowing-birthday-text">HAPPY BIRTHDAY</h1>
+                <div class="celebration-graphics-container">
+                    <img src="images/hellokittycake.png" alt="Celebration" class="celebration-img">
+                </div>
+                <p class="celebration-lead">Today is all about celebrating YOU!</p>
+                <button class="btn btn-primary" id="btn-read-wish">
+                    <span>Read My Wish 📜</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="screen" id="screen-wish">
+            <div class="glass-card wish-card">
+                <div class="wish-header">
+                    <img src="images/welcomescreen.png" alt="Heart" class="heart-icon">
+                    <h2>My Wish For You</h2>
+                    <img src="images/welcomescreen.png" alt="Heart" class="heart-icon">
+                </div>
+                <hr class="divider">
+                <div class="wish-body">
+                    <p id="typewriter-target" class="typewriter-text"></p>
+                </div>
+                <div class="wish-footer">
+                    <button class="btn btn-secondary" id="btn-celebrate-again">Celebrate Again 🎉</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
