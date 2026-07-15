@@ -34,7 +34,7 @@ Birthday-Wishes-Site/
 
 You can view the website here:
 
-> https://anuragdhiman-696.github.io/Birthday-Wishes-Site/
+> https://anuragdhiman-696.github.io/birthday-wish-for-her/
 
 
 ## 💻 How to Run
