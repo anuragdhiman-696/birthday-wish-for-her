@@ -12,7 +12,7 @@ May your day be filled with endless laughter, magical surprises, and all the swe
 
 Happy Birthday! 💖✨`;
 
-    const SECRET_PASSWORD = "2402";
+    const SECRET_PASSWORD = "2403";
 
     // DOM Engine Registry
     const DOM = {
