@@ -35,6 +35,7 @@ Birthday-Wishes-Site/
 You can view the website here:
 
 > https://anuragdhiman-696.github.io/birthday-wish-for-her/
+> for Password - Enter "2403" which is someone's birth date
 
 
 ## 💻 How to Run
